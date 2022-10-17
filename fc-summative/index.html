@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation Search and Booking | Short Stays NZ</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- jQuery UI Plugin Stylesheet -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script for JavaScript Library jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Script for jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <!-- Script for Sweet Alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <header>
+        <div class="logo">Short Stays NZ</div>
+    </header>
+
+    <main>
+        <!-- Search Form -->
+        <div class="search-bg">
+            <div class="form">
+                <h2>Search for accommodation</h2><br>
+                <form>
+                    <div class="form__form-row">
+                        <div class="form__form-col">
+                            <label for="destination">Destination</label>
+                            <select id="destination" name="destination" required>
+                                <option value="" selected disabled>Destination</option>
+                                <option value="Auckland">Auckland</option>
+                                <option value="Wellington">Wellington</option>
+                                <option value="Christchurch">Christchurch</option>
+                            </select>
+                            <p class="error" id="destination-empty"></p>
+                        </div>
+
+                        <div class="form__form-col">
+                            <label for="accommodation">Accommodation</label>
+                            <select id="accommodation" name="accommodation" required>
+                                <option value="" selected disabled>Accommodation</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="motel">Motel</option>
+                                <option value="hostel">Hostel</option>
+                                <option value="house">House</option>
+                            </select>
+                            <p class="error" id="accom-empty"></p>
+                        </div>
+
+                        <div class="form__form-col">
+                            <label for="numPeople">Number of people</label>
+                            <input type="number" name="numPeople" id="numPeople">
+                            <p class="error" id="numPeople-empty"></p>
+                        </div>
+                    </div>
+
+                    <div class="form__form-row">
+                        <div class="form__form-col">
+                            <label for="fromDate">From</label>
+                            <input type="text" name="fromDate" id="fromDate">
+                            <p class="error" id="fromDate-invalid"></p>
+                        </div>
+
+                        <div class="form__form-col">
+                            <label for="toDate">To</label>
+                            <input type="text" name="toDate" id="toDate">
+                            <p class="error" id="toDate-invalid"></p>
+                        </div>
+
+                        <div class="form__form-col">
+                            <span style="visibility: hidden;">Search</span>
+                            <button type="button" id="search">Search</button>
+                        </div>
+
+                    </div>
+                    <p id="emptyFields" class="error"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Title for results -->
+        <div class="container" id="container">
+            <h2 class="center" id="resultsTitle">Search Results</h2>
+            <!-- Title if there are no results -->
+            <p class="center bold" id="noResults"></p>
+        </div>
+
+        <!-- Div to display results - will be filled via JavaScript -->
+        <div class="results" id="results"></div>
+
+        <!-- Intro section -->
+        <div class="intro">
+            <div class="intro__text">
+                <h2><strong>Let's Find You the Perfect Short Stay</strong></h2><br>
+                <p>Going on holiday and looking for a place to stay in NZ? We make it super easy!<br><br>
+                <p>Simply fill out the fields in the form and press search. We'll show you all the accommodation
+                    options that match what you're looking for.<br><br>
+                    Once you've found what you like, you can book straight from this website too.</p>
+            </div>
+            <div class="intro__image">
+                <img src="./images/introimage.jpg" alt="house">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer copyright text -->
+    <footer>
+        <p class="center copyright">Copyright &copy; Short Stays NZ | Designed by Anjileen Daji
+        </p>
+    </footer>
+
+    <!-- Custom JavaScript-->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
