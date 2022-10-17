@@ -230,6 +230,11 @@ button:hover {
 	border: 2px solid var(--secondary);
 }
 
+button.contact:hover {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
 /* Main */
 main {
 	padding: 30px 10%;
