@@ -1,130 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio | Anjileen Daji</title>
+    <link rel="stylesheet" href="style.css">
+	<script defer src="./scripts.js"></script>
+  </head>
+  <body>
+  
+  <header class="header">
+	  <div class="logo">
+		<p class="logo">ad</p>
+	  </div>
+	  
+	  <nav>
+		  <div class="desktopNav">
+		  <ul>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a href="#projects">Projects</a></li>
+			  <li><a href="#contact">Contact</a></li>
+		  </ul>
+		  </div>
+		  
+		  <div class="mobileNav">
+		  <div id="mobMenu">&#9776; Menu</div>
+		  <div class="mobNavLinks" id="mobNavLinks">
+		  <span class="closeBtn" id="closeBtn">X</span>
+		  <ul>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a href="#projects">Projects</a></li>
+			  <li><a href="#contact">Contact</a></li>
+		  </ul>
+		  </div>
+		  </div>
+	  </nav>
+  
+  </header>
+  
 
-<head>
-	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<title>Haukai Restaurant</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Web Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-	<!-- Linking Stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/w3.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
-
-</head>
-
-<body>
-	<!-- Fixed topbar -->
-	<div class="w3-top">
-		<!-- Staff login link -->
-		<div class="w3-bar w3-2019-biking-red">
-			<a class="w3-bar-item w3-right stafflogin" href="./private/roster.html">Staff Login</a>
+	<div class="hero">
+		<div class="hero__col-left">
+			<h1>Hello, I'm <span class="bold">Anjileen Daji</span></h1>
+			<p>Web and UX Designer</p>
+			<button>Get in Touch</button>
 		</div>
-
-		<div class="navcontainer w3-display-container w3-black">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="/index.html"><img src="./images/logo2.png" alt="logo"></a>
-			</div>
-			<!-- Navigation -->
-			<nav class="nav w3-bar">
-
-				<!-- Desktop navigation -->
-				<div id="navlinks" class="w3-container w3-display-right w3-margin-right">
-					<a class="w3-bar-item" href="/index.html">Home</a>
-					<a class="w3-bar-item" href="./menu/menu.html">Menu</a>
-					<a class="w3-bar-item" href="./hours/hours.html">Hours</a>
-					<a class="w3-bar-item" href="./reservations/reservations.html">Reservations</a>
-					<a class="w3-bar-item" href="./contact/contact.html">Contact</a>
-				</div>
-
-				<!-- Mobile navigation -->
-				<div id="mobilenav" class="w3-bar-block w3-2019-biking-red">
-					<div id="mobmenu" class="w3-center"><a href="javascript:void(0);" class="icon" onclick="openNav()">
-							Menu <i class="fa fa-bars"></i></a></div>
-
-					<div id="mobilenavlinks">
-						<i onclick="w3_close()"
-							class="fa fa-remove w3-hide-large w3-button w3-xxlarge w3-hover-black w3-display-topright"></i>
-						<a class="w3-bar-item w3-black" href="/index.html">Home</a>
-						<a class="w3-bar-item w3-black" href="./menu/menu.html">Menu</a>
-						<a class="w3-bar-item w3-black" href="./hours/hours.html">Hours</a>
-						<a class="w3-bar-item w3-black" href="./reservations/reservations.html">Reservations</a>
-						<a class="w3-bar-item w3-black" href="./contact/contact.html">Contact</a>
-					</div>
-				</div>
-
-			</nav> <!-- end navigation -->
-		</div> <!-- end navigation container -->
-	</div> <!-- End fixed topbar -->
-
-	<!-- Header -->
-	<header class="w3-display-container">
-		<div class="herohome">
-			<div class="herooverlay">
-				<div class="w3-display-middle w3-text-white">
-					<h1 id="herotext">Traditional Maori Kai</h1>
-				</div>
-			</div>
+			
+		<div class="hero__col-right">
+			<img src="avatar.png" alt="avatar"> 
 		</div>
-	</header> <!-- End header -->
-
-	<!-- Main content -->
-	<main class="w3-display-container w3-padding-large">
-		<!-- Row -->
-		<div class="row">
-
-			<div class="w3-center">
-				<h1>
-					Welcome to Haukai Restaurant
-				</h1>
-				<p>
-					Based in the Bay of Islands, Haukai Restaurant is a husband and wife run restaurant specialising in
-					Māori kai. Whether you are a local or a tourist, Haukai provides authentic Māori food, as well as
-					Pākehā dishes to cater to all tastes.
-					We offer affordable pricing and a friendly atmosphere.<br>
-					Have a browse of our menu, and we hope to see you in for a meal soon!
-					<br><br>
-				</p>
-			</div>
-
-		</div> <!-- End row -->
-	</main> <!-- End main content -->
-
-	<!-- Footer -->
-	<footer class="w3-display-container w3-black w3-padding-32">
-		<div class="w3-display-middle w3-text-white">
-			<p>Copyright &copy; 2021 Haukai Restaurant | <a href="./privacy/privacy.html">Privacy Policy</a></p>
-		</div>
-	</footer> <!-- End footer-->
-
-	<!-- Script for mobile menu toggle -->
-	<script>
-		function openNav() {
-			document.getElementById("mobilenavlinks").style.width = "100%";
-			document.getElementById("mobilenavlinks").style.display = "block";
-		}
-
-		function w3_close() {
-			document.getElementById("mobilenavlinks").style.display = "none";
-			document.getElementById("mobilenavlinks").style.display = "none";
-		}
-
-	</script>
-
-</body>
-
+	</div>
+	
+	<main>
+	<section id="about">
+		<h2>About</h2>
+		<p class="first">Hi, my name's Anjileen and I have a passion for coding and design!
+		I am a qualified web designer with a Diploma in Web Development and Design from Open Polytechnic. 
+		As well as currently completing a Diploma in Web and UX Design at Yoobee College.</p>
+	
+	</section>
+	
+	<section id="projects">
+		<h2>Projects</h2>
+	<div class="project-cont">
+	
+	<div>
+	<p>Restaurant App</p>
+	<p>This is a prototype for a restaurant ordering system. It was designed to allow customers at resturants to order directly from their phone, rather than having to be served by a waiter.</p>
+	<div class="project-buttons">
+	<button>Visit Site</button>
+	<button>View Code</button>
+	</div>
+	</div>
+	
+	<div>
+	<p>Accommodation Finder</p>
+	<p>This is an accommodation finder that allows those looking for short stays in NZ to find a room to stay. It has search filters to help users find the best match for them based on their preferences.</p>
+	<div class="project-buttons">
+	<button>Visit Site</button>
+	<button>View Code</button>
+	</div>
+	</div>
+	
+	<div>
+	<p>Niche Market App</p>
+	<p>This was a group project between myself and my team members Richard and Beste. It is aimed at board game enthusiasts in NZ, and allows users to login, browse, create, edit and delete their listings. Richard coded the About and Manuals pages. All other pages were coded by me.</p>
+	<div class="project-buttons">
+	<button>Visit Site</button>
+	<button>View Code</button>
+	</div>
+	</div>
+	
+	<div>
+	<p>Wordpress Theme</p>
+	<p>This project is a custom Wordpress theme</p>
+	<div class="project-buttons">
+	<button>Visit Site</button>
+	<button>View Code</button>
+	</div>
+	</div>
+	
+	</div>
+	</section>
+	
+	<section id="contact">
+	<h2>Contact</h2>
+	<div class="center">
+	<h3>I'm available for freelance work!</h3>
+	<button>Drop Me an Email</button>
+	</div>
+	</section>
+	
+  </main>
+  
+  <footer>
+  <button class="backToTop" id="backToTop">^</button>
+  <p>Copyright &copy; 2022 | Site by Anjileen Daji</p>
+  </footer>
+  
+  </body>
 </html>
