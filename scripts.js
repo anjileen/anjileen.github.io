@@ -10,8 +10,8 @@ closeBtn.addEventListener("click", function() {
 })
 
 function openNav() {
-  document.getElementById("mobNavLinks").style.width = "70%";
-  document.getElementById("mobNavLinks").style.borderLeft = "6px solid #ccc";
+  document.getElementById("mobNavLinks").style.width = "50%";
+  document.getElementById("mobNavLinks").style.borderLeft = "6px solid #906582";
 }
 
 function closeNav() {

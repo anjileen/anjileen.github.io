@@ -4,8 +4,8 @@
 
 /* Variables */
 :root {
-	--primary: #521b80;
-	--secondary: #f5b6f9;
+	--primary: #936681;
+	--secondary: #e8c2ca;
 }
 
 /* CSS Reset */
@@ -29,6 +29,7 @@ body {
 }
 
 a {
+	color: var(--primary);
 	text-decoration: none;
 	outline: 0;
 }
@@ -51,7 +52,7 @@ h2 {
 h2::after {
 	content: '';
 	position: absolute;
-	background: #642599;
+	background: var(--primary);
 	height: 4px;
 	width: 130px;
 	top: 100%;
@@ -78,8 +79,8 @@ p {
 .header {
 	width: 100%;
 	background: var(--primary);
-	background: -webkit-linear-gradient(to right, #521b80, #742eaf);
-	background: linear-gradient(to right, #521b80, #742eaf); 
+	background: -webkit-linear-gradient(to right, #936681, #836184);
+	background: linear-gradient(to right, #936681, #836184);
 	display: flex;
 	padding: 20px 10%;
 	justify-content: space-between;
@@ -123,13 +124,12 @@ nav li a {
 	padding: 0 15px;
 }
 
-.desktopNav {
-
+nav li a:hover {
+	color: var(--secondary);
 }
 
 .mobileNav {
 	display: none;
-	
 }
 
 #mobMenu {
@@ -147,7 +147,7 @@ nav li a {
 	z-index: 1000;
 	top: 0;
 	right: 0;
-	background: #fff;
+	background: #f9f9f9;
 	overflow-x: hidden;
 	transition: 0.4s;
 	text-align: center;
@@ -166,6 +166,7 @@ nav li a {
 span.closeBtn {
 	position: absolute;
 	top: 0;
+	color: #6f6f6f;
 	padding-top: 8px;
 	right: 15px;
 	font-size: 22px;
@@ -182,8 +183,8 @@ span.closeBtn {
 	justify-content: space-between;
 	align-items: center;
 	background: var(--primary);
-	background: -webkit-linear-gradient(to right, #521b80, #742eaf);
-	background: linear-gradient(to right, #521b80, #742eaf); 
+	background: -webkit-linear-gradient(to right, #936681, #836184);
+	background: linear-gradient(to right, #936681, #836184);
 	color: #fff;
 }
 
@@ -207,15 +208,15 @@ span.closeBtn {
 
 .hero p {
 	font-weight: 500;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	color: #fff;
 }
 
 /* Button */
 button {
-	background: var(--secondary);
+	background: transparent;
 	color: var(--primary);
-	border: 2px solid var(--secondary);
+	border: 2px solid var(--primary);
 	padding: 10px 20px;
 	margin-top: 15px;
 	font-size: 0.96rem;
@@ -225,19 +226,26 @@ button {
 }
 
 button:hover {
-	background: transparent;
-	color: var(--secondary);
-	border: 2px solid var(--secondary);
+	background: var(--primary);
+	color: #fff;
 }
 
-button.contact:hover {
+button.herobtn {
+	background: #fff;
 	color: var(--primary);
-	border-color: var(--primary);
+	border: 2px solid #fff;
+}
+
+button.herobtn:hover {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 /* Main */
 main {
 	padding: 30px 10%;
+	background: #f9f9f9;
 }
 
 main h2 {
@@ -281,25 +289,35 @@ section {
 }
 
 .project-buttons button {
+	background: var(--primary);
+	border-color: #fff;
+	color: #fff;
+}
+
+.project-buttons button:hover {
 	background: transparent;
 	border-color: #ccc;
 	color: var(--primary);
 }
 
-.project-buttons button:hover {
-	background: var(--secondary);
-	border-color: var(--secondary);
+/* Contact */
+#contact p {
 	color: var(--primary);
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin-top: 10px;
 }
 
+#contact p a:hover {
+	border-bottom: 2px solid var(--primary);
+}
 
 /* Footer */
 footer {
 	position: relative;
-	background: -webkit-linear-gradient(to right, #521b80, #742eaf);
-	background: linear-gradient(to right, #521b80, #742eaf); 
+	background: -webkit-linear-gradient(to right, #936681, #836184);
+	background: linear-gradient(to right, #936681, #836184);
 	padding: 15px 10%;
-	margin-top: 30px;
 }
 
 footer p {
@@ -319,8 +337,8 @@ footer p {
 	border: none;
 	outline: none;
 	background-color: transparent;
-	border: 2px solid #888;
-	color: #888;
+	border: 2px solid var(--primary);
+	color: var(--primary);
 	cursor: pointer;
 	padding: 5px 10px;
 }
@@ -328,8 +346,8 @@ footer p {
   
  .backToTop:hover {
 	background-color: transparent;
-	border: 2px solid #888;
-	color: #888;
+	border: 2px solid var(--primary);
+	color: var(--primary);
  }
 
 
