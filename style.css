@@ -210,10 +210,11 @@ span.closeBtn {
 	font-weight: 500;
 	font-size: 1.2rem;
 	color: #fff;
+	margin-bottom: 15px;
 }
 
 /* Button */
-button {
+.button {
 	background: transparent;
 	color: var(--primary);
 	border: 2px solid var(--primary);
@@ -222,21 +223,24 @@ button {
 	font-size: 0.96rem;
 	font-weight: 600;
 	border-radius: 30px;
-	cursor: pointer;
 }
 
-button:hover {
+.button:hover {
 	background: var(--primary);
 	color: #fff;
 }
 
-button.herobtn {
+.herobtn {
 	background: #fff;
 	color: var(--primary);
 	border: 2px solid #fff;
+	padding: 10px 20px;
+	font-size: 0.96rem;
+	font-weight: 600;
+	border-radius: 30px;
 }
 
-button.herobtn:hover {
+.herobtn:hover {
 	background: transparent;
 	color: #fff;
 	border: 2px solid #fff;
@@ -288,13 +292,13 @@ section {
 	justify-content: space-between;
 }
 
-.project-buttons button {
+.project-buttons .button {
 	background: var(--primary);
 	border-color: #fff;
 	color: #fff;
 }
 
-.project-buttons button:hover {
+.project-buttons .button:hover {
 	background: transparent;
 	border-color: #ccc;
 	color: var(--primary);
