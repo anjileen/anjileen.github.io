@@ -292,6 +292,14 @@ section {
 	justify-content: space-between;
 }
 
+.project-buttons a {
+	color: #fff;
+}
+
+.project-buttons a:hover {
+	color: var(--primary);
+}
+
 .project-buttons .button {
 	background: var(--primary);
 	border-color: #fff;
