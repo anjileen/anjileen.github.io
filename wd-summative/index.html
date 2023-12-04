@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Op Shop Encounter</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.bundle.js" defer></script> 
+    <script src="./js/custom.js" defer></script> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark py-0 nav-height fixed-top">
+            <div class="container-fluid bg-blue px-10 py-3">
+                <a class="navbar-brand" href="#home">Op Shop Encounter</a>
+                <button id="menu-icon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link secLink" href="#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secLink" href="#openinghours">Opening Hours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="loc" class="nav-link secLink" href="#openinghours">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secLink" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="cover-img section" id="home">
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid px-10 py-4 clearfix">  
+            <h1 id="aboutus" class="h4 section">
+                Doubtless Bay Christian Centre has operated an opportunity shop since 1987, then known as the ‘Good News Opportunity Shop’.
+            </h1>
+            <div class="d-flex flex-column float-end about-img-col">
+                <img class="about-images" src="./img/shop.jpg" alt="inside of store">
+                <img class="about-images image-2" src="./img/carpark.jpg" alt="carpark">
+            </div>
+            <p>
+                Initially operating out of Doubtless Bay Christian Centre, in 2017 we established a stand alone shop: Op Shop Encounter. This was made possible by the relocation and reconstruction of a building generously provided by Kawakawa Primary School, along with the help of donations and a small team of volunteers. 
+                <br><br>
+                <strong>Community Initiatives</strong><br>
+                We have been involved in a number of community initiatives. From 2012-2017 we ran the popular 'Shine' programme for girls offered free to schools, where the shop funded a significant portion of salary and running costs for the programme. From 2018-2021, much of the shop's profits were invested into the new shop building project. Over the summer of 2021/22 shop profits funded shade sails to be installed over the children's play area behind our church building, which is used by both children from our church as well as by children in the wider community from other community groups who hire our facilities.
+                <br><br>
+                <strong>Proceeds</strong><br>
+                Going forward, we are planning new children and youth programmes with support from the Op Shop profits. Our heart is for the families in our community. To provide support when and where it is needed. A ‘hand-up, not a hand-out’.
+                <br><br>
+                <strong>Donations</strong><br>
+                We welcome donations of good quality clothing, linen, kitchenware, ornaments, books and furniture which are gratefully received.
+                <br><br>
+                We extend our deepest gratitude to all who support this endeavor, whether through donations, shopping at Op Shop Encounter, or the dedication of our incredible team of volunteers. Your contributions enable us to make a meaningful difference in the lives of those we serve. Thank you for being a part of our journey.
+            </p>
+            <img class="about-images image-2-mob" src="./img/carpark.jpg" alt="carpark">
+        </div>
+
+            <div id="openinghours" class="d-lg-flex flex-row justify-content-md-between align-items-center px-10 py-2 bg-lightgreen section">
+                <div class="open-hours pt-1 pb-3">
+                    <h4><strong>Opening Hours</strong></h4>
+                    <p class="h5"><strong>Friday:</strong> 9am-3pm</p>
+                    <p class="h5"><strong>Saturday:</strong> 9am-1pm</p>
+                </div>
+                <div class="location pt-1 pb-3">
+                    <h4><strong>Location</strong></h4>
+                    <p class="h5">7 Mill Bay Road</p>
+                    <p class="h5">Mangonui 0420</p>
+                </div>
+                <div>
+                    <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.638062149849!2d173.52305389999998!3d-34.990729599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0981717d57059f%3A0x3e3c5250c46d3b90!2s7%20Mill%20Bay%20Road%2C%20Coopers%20Beach%200420!5e0!3m2!1sen!2snz!4v1700105196406!5m2!1sen!2snz" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+
+
+        <div id="contact" class="d-lg-flex flex-row justify-content-md-around px-10 pt-5 pb-7 section">
+            <div class="container ps-0 pe-3">
+                <h2 class="mb-4"><strong>Contact Us</strong></h2>
+                <p class="mb-4">For any enquiries feel free to phone or email us at the details below.<br>
+                Alternatively, fill in our contact form and we'll be in touch within 24 hours.</p>
+                <p class="h5"><strong>Phone:</strong> 021 034 0909</p>
+                <p class="h5"><strong>Email:</strong> doubtlessbaychristiancentre@outlook.com</p>
+                <br>
+                <div class="fbicon"><a target="_blank" href="https://www.facebook.com/op.shop.encounter"><img src="./img/fbicon.png" alt="facebook icon"></a></div>
+            </div>
+            <div class="container p-0">
+                <form id="contact-form">
+                    <div class="mb-3 mt-3">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>    
+                    <div class="mb-3 mt-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+                      </div>
+                      <button id="submit-button" type="button" class="btn btn-primary submit-btn">Submit</button>
+                </form>
+                <p id="confirmation">Thank you, your message has been sent.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluidn bg-blue">
+            <p class="copyright text-center text-white m-0 px-2 py-2">Copyright &copy; 2023 Op Shop Encounter</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

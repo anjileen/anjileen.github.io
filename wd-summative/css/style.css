@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+}
+
+.px-10 {
+    padding-left: 10rem !important;
+    padding-right: 10rem !important;
+}
+
+.pb-7 {
+	padding-bottom: 7rem;
+}
+
+.bg-blue {
+    background:#102652;
+}
+
+.bg-lightblue {
+    background: #eaeef7;
+}
+
+.bg-lightgreen {
+    background: #cee0df;
+}
+
+.navheight {
+    min-height: 70px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #daf4f3 !important;
+}
+
+.active {
+	border-bottom: 2px solid #fff;
+}
+
+.active:hover {
+	border-bottom: 2px solid #daf4f3;
+}
+
+.cover-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 70px;
+    background-image: url('../img/building.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#aboutus {
+    margin-bottom: 1.5rem;
+}
+
+.about-img-col {
+    width: 40%;
+}
+
+.about-images {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.image-2 {
+    margin-top: 10px;
+}
+
+#gmap {
+	width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.submit-btn, .submit-btn:focus {
+    background:#102652;
+    border: none;
+    box-shadow: none;
+}
+
+.submit-btn:hover {
+    background:#214080;
+    border: none;
+    box-shadow: none;
+}
+
+#confirmation {
+    display: none;
+    margin-top: 10px;
+    border: 2px solid;
+    padding: 5px 7px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+.fbicon img {
+	width: 42px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .image-2-mob {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    h4 {font-size: 1.2rem !important;}
+    .h5 {font-size: 1.1rem !important;} 
+
+    .cover-img {
+        height: 300px;
+    }
+
+    .image-2 {
+        display: none;
+    }
+
+    .about-img-col {
+        width: 100%!important;
+    }
+
+    .about-images {
+        margin-top: 5px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .px-10 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .about-img-col {
+        width: 65%;
+    }
+
+    .open-hours, .location {
+        text-align: center;
+    }   
+}
+
+@media (min-width: 1700px) {
+    .about-img-col {
+        width: 25%;
+    }
+}
